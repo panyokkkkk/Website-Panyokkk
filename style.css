@@ -49,7 +49,10 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:18px 8%;
-    border-bottom:1px solid var(--border);
+    border-bottom:1px solid 
+var(--border);
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+    
     z-index:999;
 }
 
@@ -96,6 +99,27 @@ nav a:hover{
     align-items:center;
     justify-content:space-between;
     gap:30px;
+    position:relative;
+    overflow:hidden;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:
+    radial-gradient(
+    rgba(45,106,79,.15),
+    transparent 70%
+    );
+
+    top:100px;
+    right:50px;
+
+    border-radius:50%;
+    z-index:-1;
 }
 
 .hero-text{
@@ -151,7 +175,12 @@ nav a:hover{
     color:white;
     text-decoration:none;
     padding:12px 25px;
-    border-radius:10px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .btn-outline{
@@ -159,7 +188,13 @@ nav a:hover{
     color:var(--accent);
     text-decoration:none;
     padding:10px 25px;
-    border-radius:10px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:var(--accent);
+    color:white;
 }
 
 .hero-img{
@@ -168,7 +203,7 @@ nav a:hover{
 }
 
 .hero-img img{
-    width:260px;
+    width:220px;
     max-width:100%;
     border-radius:20px;
 
@@ -274,6 +309,15 @@ h2{
     padding:25px;
     border-radius:18px;
     border:1px solid var(--border);
+}
+.about-card,
+.skill-card,
+.project-card,
+.contact-card,
+.career-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.6);
 }
 
 footer{
