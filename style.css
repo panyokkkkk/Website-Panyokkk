@@ -19,7 +19,17 @@ html{
 }
 
 body{
-    background:var(--bg);
+    background:
+    radial-gradient(circle at top right,
+    rgba(64,145,108,.15),
+    transparent 25%),
+
+    radial-gradient(circle at bottom left,
+    rgba(45,106,79,.15),
+    transparent 30%),
+
+    #f8f6f0;
+
     color:var(--text);
     line-height:1.8;
 }
@@ -64,6 +74,14 @@ nav a:hover{
 .hero{
     min-height:100vh;
     padding:120px 8% 80px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(45,106,79,.12),
+    rgba(64,145,108,.05)
+    );
+
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -83,6 +101,7 @@ nav a:hover{
     font-size:4rem;
     color:var(--accent);
     margin:10px 0;
+    text-shadow:0 3px 10px rgba(45,106,79,.15);
 }
 
 .hero h3{
@@ -93,6 +112,21 @@ nav a:hover{
 .quote{
     max-width:600px;
     color:#475569;
+}
+.mini-info{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.mini-info div{
+    background:white;
+    padding:10px 15px;
+    border-radius:12px;
+    border:1px solid #d6d3d1;
+    font-size:.9rem;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
 }
 
 .hero-btn{
@@ -127,7 +161,7 @@ nav a:hover{
     width:320px;
     max-width:100%;
     border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    box-shadow:0 15px 40px rgba(45,106,79,.2);
 }
 
 section{
