@@ -3,111 +3,186 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elvando Portfolio</title>
+<title>Portofolio Elvando</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+</head>
 <body>
 
 <nav>
     <div class="logo">ELVANDO</div>
 
     <ul>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
     </ul>
 </nav>
 
 <header class="hero">
 
-    <img src="profile.jpg" alt="Profile" class="profile">
+    <div class="hero-text">
 
-    <h1>ELVANDO</h1>
+        <span class="sapaan">Halo, Saya</span>
 
-    <p id="typing"></p>
+        <h1>ELVANDO</h1>
 
-    <div class="stats">
-        <div>
-            <h3>17</h3>
-            <span>Tahun</span>
+        <h3>Siswa XII RPL 1 • SMKN 1 Semparuk</h3>
+
+        <p class="quote">
+            "Saya percaya kemampuan dibangun dari rasa penasaran,
+            konsistensi belajar, dan keberanian mencoba hal baru."
+        </p>
+
+        <div class="hero-btn">
+
+            <a href="#tentang" class="btn">
+                Tentang Saya
+            </a>
+
+            <a href="#kontak" class="btn-outline">
+                Hubungi Saya
+            </a>
+
         </div>
 
-        <div>
-            <h3>XII</h3>
-            <span>RPL 1</span>
-        </div>
-
-        <div>
-            <h3>5+</h3>
-            <span>Skill</span>
-        </div>
     </div>
 
-    <a href="#about" class="btn">Jelajahi Portfolio</a>
+    <div class="hero-img">
+        <img src="profile.jpg" alt="Elvando">
+    </div>
 
 </header>
 
-<section id="about">
+<section id="tentang">
 
     <h2>Tentang Saya</h2>
 
-    <div class="card">
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <h3>Profil Singkat</h3>
+
+            <ul>
+                <li><strong>Nama:</strong> Elvando</li>
+                <li><strong>Umur:</strong> 17 Tahun</li>
+                <li><strong>Alamat:</strong> Sambas, Kalimantan Barat</li>
+                <li><strong>Sekolah:</strong> SMKN 1 Semparuk</li>
+                <li><strong>Hobi:</strong> Badminton</li>
+            </ul>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>Cerita Saya</h3>
+
+            <p>
+                Saya adalah siswa SMKN 1 Semparuk jurusan
+                Rekayasa Perangkat Lunak (RPL).
+
+                Ketertarikan saya terhadap dunia teknologi
+                dimulai sejak SMP dan terus berkembang
+                hingga sekarang.
+
+                Saat ini saya fokus mempelajari HTML,
+                CSS, JavaScript, PHP, serta Git untuk
+                meningkatkan kemampuan membuat website
+                dan memahami logika pemrograman.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="keahlian">
+
+    <h2>Keahlian</h2>
+
+    <div class="skill-grid">
+
+        <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Membangun struktur dan tampilan website yang responsif.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Memahami DOM dan logika dasar pemrograman web.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>PHP</h3>
+            <p>Memahami dasar pengembangan website sisi server.</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Git & GitHub</h3>
+            <p>Mengelola proyek dan publikasi website.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="proyek">
+
+    <h2>Proyek Pilihan</h2>
+
+    <div class="project-card">
+        <h3>Website Portofolio Pribadi</h3>
         <p>
-            Saya adalah siswa kelas XII RPL 1 di SMKN 1 Semparuk.
-            Ketertarikan saya terhadap dunia teknologi dimulai sejak SMP
-            dan terus berkembang hingga saat ini.
+            Website yang dibuat untuk menampilkan profil,
+            kemampuan, dan perjalanan belajar saya.
+        </p>
+    </div>
 
-            Saya aktif mempelajari dasar-dasar pemrograman secara mandiri
-            maupun melalui kegiatan di sekolah.
+    <div class="project-card">
+        <h3>Landing Page Responsif</h3>
+        <p>
+            Latihan membuat tampilan website modern
+            yang dapat menyesuaikan berbagai ukuran layar.
+        </p>
+    </div>
 
-            Fokus utama saya saat ini adalah memahami logika pemrograman,
-            membangun website yang rapi, serta meningkatkan kemampuan
-            problem solving.
+    <div class="project-card">
+        <h3>Kalkulator JavaScript</h3>
+        <p>
+            Proyek latihan logika dasar JavaScript
+            dan manipulasi elemen halaman web.
         </p>
     </div>
 
 </section>
 
-<section id="skills">
+<section id="pendidikan">
 
-    <h2>Tech Stack</h2>
+    <h2>Riwayat Pendidikan</h2>
 
-    <div class="skills">
+    <div class="timeline">
 
-        <div class="skill">🌐 HTML5</div>
-        <div class="skill">🎨 CSS3</div>
-        <div class="skill">⚡ JavaScript</div>
-        <div class="skill">🐘 PHP</div>
-        <div class="skill">🌿 Git</div>
-
-    </div>
-
-</section>
-
-<section id="projects">
-
-    <h2>Project</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Website Biodata</h3>
-            <p>Website portfolio pribadi menggunakan HTML dan CSS.</p>
+        <div class="timeline-item">
+            <h3>2024 - 2027</h3>
+            <p>SMKN 1 Semparuk</p>
+            <span>Rekayasa Perangkat Lunak (RPL)</span>
         </div>
 
-        <div class="card">
-            <h3>Landing Page</h3>
-            <p>Latihan membuat tampilan website modern dan responsif.</p>
+        <div class="timeline-item">
+            <h3>2021 - 2024</h3>
+            <p>MTs Al-Hikmah Sidang</p>
         </div>
 
-        <div class="card">
-            <h3>Kalkulator JavaScript</h3>
-            <p>Project sederhana menggunakan JavaScript dasar.</p>
+        <div class="timeline-item">
+            <h3>2015 - 2021</h3>
+            <p>SD Negeri 42 Serindang</p>
         </div>
 
     </div>
@@ -116,33 +191,58 @@
 
 <section>
 
-    <h2>Target Saya</h2>
+    <h2>Tujuan Karier</h2>
 
-    <div class="card">
-        Menjadi Web Developer dan Software Engineer yang mampu
-        menciptakan solusi digital yang bermanfaat dan mudah digunakan.
+    <div class="career-card">
+
+        <p>
+            Saya ingin terus mengembangkan kemampuan
+            di bidang web development dan pemrograman.
+
+            Dengan belajar secara konsisten,
+            saya berharap dapat menciptakan solusi
+            digital yang bermanfaat bagi banyak orang.
+        </p>
+
     </div>
 
 </section>
 
-<section id="contact">
+<section id="kontak">
 
-    <h2>Kontak</h2>
+    <h2>Mari Terhubung</h2>
 
-    <div class="card">
-        <p>🏫 SMKN 1 Semparuk</p>
-        <p>📍 Sambas, Kalimantan Barat</p>
-        <p>🏸 Hobi: Badminton</p>
-        <p>💻 GitHub: panyokkkkk</p>
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <h3>📍 Lokasi</h3>
+            <p>Sambas, Kalimantan Barat</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>🏫 Sekolah</h3>
+            <p>SMKN 1 Semparuk</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>💻 GitHub</h3>
+            <p>panyokkkkk</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>📧 Email</h3>
+            <p>panyokkkkk@gmail.com</p>
+        </div>
+
     </div>
 
 </section>
 
 <footer>
-    © 2026 Elvando Portfolio
+    <p>Dibuat oleh Elvando menggunakan HTML, CSS, dan JavaScript.</p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-</html>
+            </html>
