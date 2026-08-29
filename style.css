@@ -20,15 +20,19 @@ html{
 
 body{
     background:
-    radial-gradient(circle at top right,
-    rgba(64,145,108,.15),
+    radial-gradient(circle at 15% 20%,
+    rgba(45,106,79,.12),
     transparent 25%),
 
-    radial-gradient(circle at bottom left,
-    rgba(45,106,79,.15),
-    transparent 30%),
+    radial-gradient(circle at 85% 80%,
+    rgba(64,145,108,.12),
+    transparent 25%),
 
-    #f8f6f0;
+    linear-gradient(
+    to bottom,
+    #f8f6f0,
+    #f4f1ea
+    );
 
     color:var(--text);
     line-height:1.8;
@@ -191,10 +195,13 @@ h2{
 }
 
 .about-card{
-    background:var(--card);
+    background:rgba(255,255,255,.7);
+    backdrop-filter:blur(8px);
+
     padding:25px;
     border-radius:18px;
-    border:1px solid var(--border);
+
+    border:1px solid rgba(255,255,255,.5);
 }
 
 .about-card ul{
@@ -317,5 +324,24 @@ nav ul{
 .hero h1{
     font-size:2.5rem;
 }
+}
+body::before{
+    content:"";
 
-                         }
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.03) 1px,
+    transparent 1px
+    );
+
+    background-size:100% 40px;
+
+    pointer-events:none;
+
+    z-index:-1;
+        }
+
