@@ -3,174 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Biodata</title>
+<title>Portfolio Elvando</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    min-height:100vh;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.container{
-    width:100%;
-    max-width:900px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,0.15);
-    border-radius:25px;
-    padding:40px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
     color:white;
-    box-shadow:0 20px 50px rgba(0,0,0,0.3);
+    line-height:1.6;
 }
 
-.header{
+header{
     text-align:center;
+    padding:60px 20px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
 }
 
 .profile{
-    width:150px;
-    height:150px;
+    width:170px;
+    height:170px;
     border-radius:50%;
     object-fit:cover;
-    border:4px solid white;
-    margin-bottom:15px;
+    border:4px solid #38bdf8;
+    margin-bottom:20px;
 }
 
-.header h1{
-    font-size:2.2rem;
+header h1{
+    font-size:2.8rem;
 }
 
-.header p{
-    opacity:.8;
+header p{
+    color:#cbd5e1;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:40px 0;
 }
 
 .section{
-    margin-top:35px;
+    margin-bottom:40px;
 }
 
 .section h2{
+    color:#38bdf8;
     margin-bottom:15px;
-    color:#60a5fa;
-}
-
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:15px;
+    border-bottom:2px solid #38bdf8;
+    display:inline-block;
+    padding-bottom:5px;
 }
 
 .card{
-    background:rgba(255,255,255,0.08);
-    padding:15px;
+    background:rgba(255,255,255,0.06);
+    padding:20px;
     border-radius:15px;
-    transition:.3s;
+    margin-top:15px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
 }
 
-.contact a{
-    color:#93c5fd;
-    text-decoration:none;
+.skill{
+    background:#1e40af;
+    padding:15px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.project{
+    background:rgba(255,255,255,0.06);
+    padding:20px;
+    border-radius:15px;
 }
 
 footer{
     text-align:center;
-    margin-top:30px;
-    opacity:.7;
+    padding:20px;
+    color:#94a3b8;
 }
 </style>
 </head>
+
 <body>
+
+<header>
+    <img src="2c3d476fc9d626cc01238e973e15289f.jpg" class="profile" alt="Foto Profil">
+
+    <h1>Elvando</h1>
+    <p>Siswa XII RPL 1 | Web Developer Pemula</p>
+</header>
 
 <div class="container">
 
-    <div class="header">
-        <img src="2c3d476fc9d626cc01238e973e15289f.jpg" alt="Foto Profil" class="profile">
-
-        <h1>E....</h1>
-        <p>Siswa | Pelajar | Teknologi Enthusiast</p>
-    </div>
-
-    <div class="section">
+    <section class="section">
         <h2>Tentang Saya</h2>
-        <p>
-            Saya adalah seorang pelajar yang tertarik pada dunia teknologi,
-            desain digital, dan pengembangan website. Saya senang belajar
-            hal-hal baru dan terus mengembangkan kemampuan saya.
-        </p>
-    </div>
 
-    <div class="section">
+        <div class="card">
+            Saya adalah siswa kelas XII RPL 1 di SMKN 1 Semparuk.
+            Ketertarikan saya terhadap dunia teknologi dimulai sejak SMP
+            dan terus berkembang hingga saat ini.
+
+            Saya aktif mempelajari dasar-dasar pemrograman baik secara
+            mandiri maupun melalui pembelajaran di sekolah.
+
+            Saat ini saya berfokus pada pengembangan kemampuan dalam
+            pembuatan website, memahami logika pemrograman, serta
+            meningkatkan kemampuan problem solving.
+        </div>
+    </section>
+
+    <section class="section">
         <h2>Biodata</h2>
-        <div class="card-grid">
-            <div class="card">
-                <b>Nama</b><br>
-                E....
-            </div>
 
-            <div class="card">
-                <b>Kelas</b><br>
-                XII RPL
-            </div>
-
-            <div class="card">
-                <b>Umur</b><br>
-                16 Tahun
-            </div>
-
-            <div class="card">
-                <b>Alamat</b><br>
-                Kalimantan Barat
-            </div>
+        <div class="grid">
+            <div class="card"><b>Nama</b><br>Elvando</div>
+            <div class="card"><b>Umur</b><br>17 Tahun</div>
+            <div class="card"><b>Kelas</b><br>XII RPL 1</div>
+            <div class="card"><b>Sekolah</b><br>SMKN 1 Semparuk</div>
+            <div class="card"><b>Alamat</b><br>Sambas, Kalimantan Barat</div>
+            <div class="card"><b>Hobi</b><br>Badminton</div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
         <h2>Skill</h2>
-        <div class="card-grid">
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">Canva</div>
-            <div class="card">Microsoft Office</div>
+
+        <div class="grid">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">Git</div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h2>Hobi</h2>
-        <div class="card-grid">
-            <div class="card">🎮 Gaming</div>
-            <div class="card">🎬 Menonton Film</div>
-            <div class="card">🎵 Mendengarkan Musik</div>
-            <div class="card">💻 Belajar Teknologi</div>
+    <section class="section">
+        <h2>Project</h2>
+
+        <div class="grid">
+            <div class="project">
+                <h3>Website Biodata</h3>
+                <p>Website portofolio pribadi menggunakan HTML dan CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Landing Page Sederhana</h3>
+                <p>Latihan membuat tampilan website responsif.</p>
+            </div>
+
+            <div class="project">
+                <h3>Kalkulator JavaScript</h3>
+                <p>Proyek sederhana menggunakan JavaScript dasar.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section contact">
-        <h2>Kontak</h2>
-        <p>Email : emailkamu@example.com</p>
-        <p>GitHub : <a href="#">github.com/username</a></p>
-    </div>
+    <section class="section">
+        <h2>Tujuan Karier</h2>
 
-    <footer>
-        © 2026 Portfolio Biodata
-    </footer>
+        <div class="card">
+            Saya bercita-cita untuk terus mengembangkan kemampuan di bidang
+            pengembangan web dan teknologi informasi serta menjadi
+            profesional yang mampu menciptakan solusi digital yang
+            bermanfaat bagi masyarakat.
+        </div>
+    </section>
 
 </div>
 
+<footer>
+    © 2026 Portfolio Elvando
+</footer>
+
 </body>
-  </html>
+    </html>
