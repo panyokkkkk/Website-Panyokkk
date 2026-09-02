@@ -263,7 +263,7 @@ h2{
 }
 
 .timeline{
-    background:rgba(255,255,255,.85);
+    background:white;
 
     border-left:4px solid var(--accent);
 
@@ -271,9 +271,9 @@ h2{
 
     border-radius:18px;
 
-    border:1px solid rgba(0,0,0,.06);
-
     box-shadow:0 5px 15px rgba(0,0,0,.04);
+
+    border:1px solid rgba(0,0,0,.06);
 }
 
 .timeline-item{
